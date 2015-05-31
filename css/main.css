@@ -1,0 +1,154 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-family: "PT Sans", Arial, Tahoma, Helvetica;
+    font-style: normal;
+}
+
+.top-box {
+    min-height: 35px;
+    padding: 35px 0;
+}
+
+.top-box h4 {
+    font-weight: 800;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #6A6D6F;
+}
+
+.top-box strong {
+    font-size: 18px;
+    font-weight: 800;
+    color: #fc5a0a  ;
+
+}
+
+.top-box .logo {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 40px;
+    color: #fc5a0a;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.row {
+    text-align: center;
+}
+
+.logo > span {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.col-sm-12 {
+    padding-bottom: 35px;
+}
+
+header {
+    position: relative;
+    background-color: #1C2025;
+    /*height: 80px;*/
+    z-index: 5000;
+}
+
+.navbar-nav {
+    float: left;
+}
+
+.navbar-nav li  {
+    padding: 10px 0;
+    width: inherit;
+}
+
+.navbar-nav  li  a {
+    padding: 9px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+button.navbar-toggle {
+    background-color: #fc5a0a;
+    margin-top: 21px;
+    padding: 10px;
+}
+
+.icon-bar {
+    background: #fff;
+}
+
+.navbar-nav{
+    box-shadow: none;
+    background-color: #1C2025;
+    border-top: none;
+    /*padding-top: 15px;*/
+}
+
+#navbar-collapse{
+    margin-top: 3px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.in > ul li {
+    /*width: 750px;*/
+}
+.in {
+    /*background-color: #323232;*/
+    /*z-index: 200;*/
+
+}
+
