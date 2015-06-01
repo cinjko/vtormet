@@ -225,7 +225,7 @@ div.about {
     float: left;
 }
 
-.about p {
+.about p, .review p {
     font-family: 'PT Sans', sans-serif;
     font-size: 18px;
     color: #6a6d6f;
@@ -260,4 +260,108 @@ div.about .right ol li span {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     background-color: #fc5a0a;
+}
+
+div.team {
+    padding: 0;
+    background: url("../images/Sunset-Country.jpg") no-repeat top center fixed;
+}
+
+.box h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 55px;
+    font-weight: 400;
+    margin: 0 0 45px;
+}
+
+
+
+.team .box {
+    margin: 80px auto;
+    padding: 30px;
+    background: #fc5a0a;
+    background: rgba(252, 90, 10, .95 );
+}
+
+.box .container{
+    padding-right: 60px;
+}
+
+div.team h3 {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+}
+
+div.team p {
+    color: #fff;
+    margin: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 991px) {
+    .team figure {
+        margin-bottom: 30px;
+    }
+}
+
+.review h1 {
+    text-transform: uppercase;
+    color: #1C2025;
+    margin: 30px ;
+}
+
+.review h3 {
+    font-family: 'PT Sans', sans-serif;
+    color: #6a6d6f;
+    font-weight: 400;
+    padding-bottom: 20px;
+    padding-left: 55px;
+
+}
+
+.review {
+    position: relative;
+}
+
+.comment {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: url("../images/quotes.PNG") no-repeat 15px top;
+}
+
+.comment p {
+    padding-left: 55px;
+}
+
+footer {
+    font-family: 'PT Sans', sans-serif;
+    background: #272D33;
+}
+
+.footer h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.footer dl {
+    margin-left: -63px;
+}
+
+.footer dt {
+    color: #fc5a0a;
+    font-size: 18px
+}
+
+.footer dd {
+    color: #fff;
+    font-size: 17px;
+}
+
+#map {
+    height: 300px;
 }
