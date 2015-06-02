@@ -322,6 +322,7 @@ div.team p {
 }
 
 .review {
+    padding-bottom: 30px;
     position: relative;
 }
 
@@ -341,6 +342,10 @@ footer {
     background: #272D33;
 }
 
+.footer {
+    margin-bottom: 30px;
+}
+
 .footer h1 {
     text-transform: uppercase;
     font-weight: 600;
@@ -348,8 +353,15 @@ footer {
     margin-bottom: 30px;
 }
 
+
+
 .footer dl {
-    margin-left: -63px;
+    margin-left: -73px;
+}
+@media (max-width: 767px) {
+    .footer dl {
+        margin-left: 0;
+    }
 }
 
 .footer dt {
@@ -362,6 +374,22 @@ footer {
     font-size: 17px;
 }
 
-#map {
+.map {
+    position: relative;
+}
+
+#googleMap {
+    padding: 0;
     height: 300px;
 }
+
+#googleMap  .gm-style div{
+    margin-top: -5px;
+    padding: 0;
+}
+
+.copyright {
+    height: 65px;
+    background: #1C2025;
+}
+
