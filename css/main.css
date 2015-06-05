@@ -383,7 +383,7 @@ footer {
     height: 300px;
 }
 
-#googleMap  .gm-style div{
+#googleMap .gm-style div{
     margin-top: -5px;
     padding: 0;
 }
@@ -393,3 +393,49 @@ footer {
     background: #1C2025;
 }
 
+.copyright a, .copyright p {
+    padding-top: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.copyright a:hover {
+    padding-top: 15px;
+    text-decoration: underline;
+    color: #fff;
+    font-size: 18px;
+}
+
+footer .copyright a.div {
+    float: right;
+    margin: 0;
+}
+
+
+
+@media (max-width: 991px) {
+    footer .copyright {
+        text-align: center;
+        min-height: 100px;
+        line-height: 2px;
+    }
+
+    .copyright a, .copyright p {
+        padding-top: 8px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #fff;
+        margin: 0;
+        font-size: 18px;
+    }
+
+    footer .copyright a.div {
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+body {
+    overflow: visible;
+}
