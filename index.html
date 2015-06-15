@@ -7,6 +7,12 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Эмил ВторМет - Главная страница</title>
 
+    <!-- Local js files -->
+    <script type="text/javascript" src="/js/jquery-1.11.3.js"></script>
+
+    <!-- Local js files -->
+    <script type="text/javascript" src="/js/main.js"></script>
+
     <!-- Google Map -->
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
     <script type="text/javascript" src="js/google.maps.api.js"></script>
@@ -16,6 +22,7 @@
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href="css/main.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
+    <script type="text/javascript" src="js/bootstrap.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -85,7 +92,7 @@
         <div class="container about">
             <div class="row">
 
-                <div class="col-md-8 left animatad fadeUp">
+                <div class="col-md-8 left animatad fadeUp" data-animated="fadeUp">
                     <h1><strong>Немного</strong> о нас</h1>
                     <figure>
                         <figcamption>
@@ -112,7 +119,7 @@
                     </figure>
                 </div>
 
-                <div class="col-md-4 right animatad fadeUp">
+                <div class="col-md-4 right animatad fadeUp" data-animated="fadeUp">
                     <h1><strong>Наши</strong> преимущесва</h1>
                     <ol>
                         <li>
@@ -147,7 +154,7 @@
 
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-6 text-center animated fadeInUp">
+                                <div class="col-md-6 text-center animated fadeInUp" data-animated="fadeInUp">
 
                                     <figure>
                                         <img src="images/team_2.jpg" alt=""/>
@@ -159,7 +166,7 @@
                                     </figure>
                                 </div>
 
-                                <div class="col-md-6 text-center animated fadeInUp  ">
+                                <div class="col-md-6 text-center animated fadeInUp" data-animated="fadeInUp">
                                     <figure>
                                         <img src="images/team_1.jpg" alt=""/>
                                         <figcaption>
@@ -240,7 +247,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>easeInOutCubic
 
     </main>
 
@@ -293,13 +300,13 @@
                     <div class="col-md-4 col-sm-12 col-xs-12">
                         <a href="#"  target="_blank" class="div"><img src="images/logo.png" alt="акула"/>Разработка сайта: "Акула"</a>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
     </footer>
 
-    <div id="toTop"></div>
+    <div id="toTop" class="show__btn-hidden btn-hidden"></div>
 
     <!--Google.maps.api-->
 

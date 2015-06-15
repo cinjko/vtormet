@@ -176,6 +176,10 @@ ul.navbar-nav{
     }
 }
 
+ul.navbar-nav  li  a:hover {
+    background: #fc5a0a;
+}
+
 ul.navbar-nav li a span{
     display: block;
     height: 10px;
@@ -207,8 +211,9 @@ ul.navbar-nav li a span{
 }
 
 div.about {
-    padding: 30px 0 0 0;
+    /*padding: 30px 0;*/
     margin: auto;
+    overflow: hidden;
 }
 
 .about .left h1 {
@@ -275,7 +280,9 @@ div.team {
     margin: 0 0 45px;
 }
 
-
+.about .row {
+    padding: 30px 0 30px 0;
+}
 
 .team .box {
     margin: 80px auto;
@@ -389,7 +396,7 @@ footer {
 }
 
 .copyright {
-    height: 65px;
+    min-height: 65px;
     background: #1C2025;
 }
 
@@ -412,12 +419,15 @@ footer .copyright a.div {
     margin: 0;
 }
 
+body {
+    /*overflow: hidden;*/
+}
 
 
 @media (max-width: 991px) {
     footer .copyright {
         text-align: center;
-        min-height: 100px;
+        min-height: 65px;
         line-height: 2px;
     }
 
@@ -436,6 +446,17 @@ footer .copyright a.div {
     }
 }
 
-body {
-    overflow: visible;
+.btn-hidden {
+    display: none;
+}
+
+.show__btn-hidden {
+    height: 32px;
+    width: 32px;
+    position: fixed;
+    opacity: 1;
+    background: url("../images/arrow-up.png") no-repeat center center;
+    bottom: 80px;
+    right: 80px;
+    cursor: pointer;
 }
