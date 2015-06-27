@@ -47,9 +47,22 @@ table {
 }
 
 body {
-    font-family: 'PT Sans', sans-serif;
+    font-family: "robotobold", sans-serif;
     font-size: 16px;
     color: #6a6d6f;
+    background: url("../images/crossword.png");
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/roboto-bold-webfont.eot');
+    src: url('../fonts/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
+    url('../fonts/roboto-bold-webfont.woff') format('woff'),
+    url('../fonts/roboto-bold-webfont.ttf') format('truetype'),
+    url('../fonts/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .top-box {
@@ -59,7 +72,8 @@ body {
 }
 
 .top-box h4 {
-    font-weight: 700;
+    font-family: 'robotobold', Tahoma, Arial, sans-serif !important;
+    font-weight: 800;
     line-height: 24px;
     text-transform: uppercase;
     color: #6A6D6F;
@@ -73,7 +87,7 @@ body {
 
 .top-box .logo {
     font-size: 42px;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 40px;
     color: #fc5a0a;
     text-decoration: none;
@@ -81,7 +95,6 @@ body {
 }
 
 .top-box .logo span {
-    text-align: center;
 }
 
 .top-box .contacts {
@@ -93,6 +106,9 @@ body {
 }
 
 .logo > span {
+    font-family: 'robotobold', Arial, sans-serif;
+    text-align: center;
+    font-weight: 900;
     display: block;
     text-transform: uppercase;
 }
@@ -115,14 +131,33 @@ header {
 }
 
 ul.navbar-nav > li > a {
-    font-family: "PT Sans", sans-serif;
-    padding: 14px 25px;
+    font-family: "Roboto", sans-serif;
+    padding: 17px 0 16px 0;
+    margin: 0 25px;
     font-size: 19px;
     font-weight: 400;
     color: #fff;
     text-transform: uppercase;
     position: relative;
 
+}
+
+/*Slider*/
+.carousel-inner .item {
+    height: 580px;
+}
+
+ol.carousel-indicators li {
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff;
+}
+
+ol.carousel-indicators li.active {
+    height: 20px;
+    width: 20px;
+    background-color: #fc5a0a;
+    border-color: #fc5a0a;
 }
 
 button.navbar-toggle {
@@ -161,7 +196,10 @@ ul.navbar-nav{
 
     ul.navbar-nav  li  a {
         font-size: 16px;
-        padding: 12px 15px;
+        padding: 17px 0;
+        margin: -1px 15px;
+        /*position: relative;*/
+        /*align-content: center;*/
     }
 }
 
@@ -177,17 +215,20 @@ ul.navbar-nav{
 }
 
 ul.navbar-nav  li  a:hover {
-    background: #fc5a0a;
+    border-bottom: 10px solid #fc5a0a;
+    background: none;
 }
 
-ul.navbar-nav li a span{
-    display: block;
-    height: 10px;
-    background-color: #fc5a0a;
-    visibility: visible;
+a.first-active {
+    border-bottom: 10px solid #fc5a0a;
+    background: none !important;
     position: absolute;
-    bottom: 0;
-    content: '';
+}
+
+#myCarousel {
+    height: 580px;
+    overflow: hidden;
+
 }
 
 .slide_images {
@@ -211,7 +252,6 @@ ul.navbar-nav li a span{
 }
 
 div.about {
-    /*padding: 30px 0;*/
     margin: auto;
     overflow: hidden;
 }
@@ -231,8 +271,8 @@ div.about {
 }
 
 .about p, .review p {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     color: #6a6d6f;
     font-weight: 400;
 }
@@ -320,7 +360,7 @@ div.team p {
 }
 
 .review h3 {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #6a6d6f;
     font-weight: 400;
     padding-bottom: 20px;
@@ -345,7 +385,7 @@ div.team p {
 }
 
 footer {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: #272D33;
 }
 
@@ -359,8 +399,6 @@ footer {
     color: #fff;
     margin-bottom: 30px;
 }
-
-
 
 .footer dl {
     margin-left: -73px;
@@ -418,11 +456,6 @@ footer .copyright a.div {
     float: right;
     margin: 0;
 }
-
-body {
-    /*overflow: hidden;*/
-}
-
 
 @media (max-width: 991px) {
     footer .copyright {

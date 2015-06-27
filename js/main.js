@@ -4,17 +4,15 @@
 $(document).ready(function() {
 
     $(window).scroll(function() {
-        //alert("Started scrolling!");
 
         var height = $('body').scrollTop();
-        console.log(height);
+        //console.log(height);
         if (height >= 350) {
             $('#toTop').fadeIn(500);
         } else{
             $('#toTop').fadeOut(500);
         }
         $('#toTop').on('click', function() {
-            console.log(this);
 
             $('body, html').stop().animate({
                 scrollTop: "0"
@@ -22,10 +20,23 @@ $(document).ready(function() {
 
         });
 
-        if(height > 500) {
-            $('.about .fadeUp').fadeIn("300");
+        if(height > 200) {
+            $('.about .animated').addClass('fadeInUp');
         }
 
+        if(height > 1100) {
+            $('.team .animated').addClass('fadeInUp');
+        }
+
+        if(height > 1900) {
+            $('.review .animated').addClass('fadeInDown');
+        }
     });
+
+    $('#navbar-collapse li a').on('click', function() {
+        $('#navbar-collapse li a.first-active').removeClass('first-active');
+        console.log($(this));
+        $(this).addClass('first-active');
+    })
 
 });
