@@ -419,18 +419,18 @@ footer {
     font-size: 17px;
 }
 
-.map {
+div.map {
     position: relative;
+    margin-top: 26px;
 }
 
-#googleMap {
+#map-canvas{
     padding: 0;
     height: 300px;
 }
 
-#googleMap .gm-style div{
-    margin-top: -5px;
-    padding: 0;
+#map-canvas div {
+    margin: 0;
 }
 
 .copyright {
@@ -492,4 +492,8 @@ footer .copyright a.div {
     bottom: 80px;
     right: 80px;
     cursor: pointer;
+}
+
+.disabled {
+    opacity: 0;
 }

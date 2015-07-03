@@ -20,16 +20,16 @@ $(document).ready(function() {
 
         });
 
-        if(height > 200) {
-            $('.about .animated').addClass('fadeInUp');
+        if(height > 450) {
+            $('.about .animated').removeClass('disabled').addClass('fadeInUp');
         }
 
-        if(height > 1100) {
-            $('.team .animated').addClass('fadeInUp');
+        if(height > 1300) {
+            $('.team .animated').removeClass('disabled').addClass('fadeInUp');
         }
 
         if(height > 1900) {
-            $('.review .animated').addClass('fadeInDown');
+            $('.review .animated').removeClass('disabled').addClass('fadeInDown');
         }
     });
 
