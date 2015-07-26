@@ -54,7 +54,7 @@ body {
 }
 
 @font-face {
-    font-family: 'robotobold';
+    font-family: 'robotobold' !important;
     src: url('../fonts/roboto-bold-webfont.eot');
     src: url('../fonts/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
     url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
@@ -72,7 +72,7 @@ body {
 }
 
 .top-box h4 {
-    font-family: 'robotobold', Tahoma, Arial, sans-serif !important;
+    font-family: 'robotobold', Tahoma, Arial, sans-serif;
     font-weight: 800;
     line-height: 24px;
     text-transform: uppercase;
