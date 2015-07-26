@@ -212,6 +212,11 @@ ul.navbar-nav{
         height: 480px;
     }
 
+    .about img {
+        display: block;
+        float: none !important;
+        margin: 30px auto !important; }
+
 }
 
 @media (max-width: 767px) {
