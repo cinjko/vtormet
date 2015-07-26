@@ -54,7 +54,7 @@ body {
 }
 
 @font-face {
-    font-family: 'robotobold';
+    font-family: 'robotobold' !important;
     src: url('../fonts/roboto-bold-webfont.eot');
     src: url('../fonts/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
     url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
@@ -72,7 +72,7 @@ body {
 }
 
 .top-box h4 {
-    font-family: 'robotobold', Tahoma, Arial, sans-serif !important;
+    font-family: 'robotobold', Tahoma, Arial, sans-serif;
     font-weight: 800;
     line-height: 24px;
     text-transform: uppercase;
@@ -147,6 +147,11 @@ ul.navbar-nav > li > a {
     height: 580px;
 }
 
+.carousel-inner img {
+    width: 100%;
+    height: inherit !important;
+}
+
 ol.carousel-indicators li {
     height: 20px;
     width: 20px;
@@ -191,26 +196,36 @@ ul.navbar-nav{
 
 @media (max-width: 991px) {
     .top-box [class*="col-"] {
-        padding-bottom: 35px;
     }
 
     ul.navbar-nav  li  a {
         font-size: 16px;
         padding: 17px 0;
         margin: -1px 15px;
-        /*position: relative;*/
-        /*align-content: center;*/
     }
+
+    #myCarousel {
+        height: 480px !important;
+    }
+
+    .carousel-inner .item {
+        height: 480px;
+    }
+
 }
 
 @media (max-width: 767px) {
     #navbar-collapse {
         margin: 14px -30px;
+        background-color: #323232;
     }
 
-    .in {
-        background-color: #323232;
-        z-index: 200;
+    #myCarousel {
+        height: 320px !important;
+    }
+
+    .carousel-inner .item {
+        height: 320px;
     }
 }
 
@@ -228,7 +243,6 @@ a.first-active {
 #myCarousel {
     height: 580px;
     overflow: hidden;
-
 }
 
 .slide_images {
@@ -326,7 +340,7 @@ div.team {
 
 .team .box {
     margin: 80px auto;
-    padding: 30px;
+    padding-top: 30px;
     background: #fc5a0a;
     background: rgba(252, 90, 10, .95 );
 }

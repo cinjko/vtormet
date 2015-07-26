@@ -1,0 +1,32 @@
+@import url(../css/main.css);
+@media (max-width: 991px) {
+  .products-description img {
+    width: 450px;
+    display: block;
+    float: none !important;
+    margin: 30px auto !important; } }
+
+@media (max-width: 767px) {
+  .products-description img {
+    width: 100% !important;
+    display: block;
+    float: none;
+    margin: 30px auto !important; } }
+
+.container-wrapper {
+  border-bottom: 8px solid #1d2027; }
+
+.container h2 {
+  margin: 30px 0 30px 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fc5a0a; }
+
+.products-description {
+  font-family: 'Open Sans', Tahoma, sans-serif;
+  font-size: 16px;
+  color: #6a6d6f; }
+  .products-description img {
+    width: 450px;
+    float: left;
+    margin: 0 30px 30px 0; }
