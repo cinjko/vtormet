@@ -1,3 +1,11 @@
+<?php
+require_once "../controller/feedbackController.php";
+session_start();
+if (isset($_POST['submit'])) {
+    $result = new FeedbackForm();
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,9 +82,9 @@
                 <div id="navbar-collapse" class="collapse navbar-collapse ">
                     <ul class="nav navbar-nav">
                         <li><a href="../index.html">Главная<span></span></a></li>
-                        <li><a class="first-active" href="shopping.html">Что мы покупаем?<span></span></a></li>
+                        <li><a href="shopping.html">Что мы покупаем?<span></span></a></li>
                         <li><a href="#">Фотографии товара<span></span></a></li>
-                        <li><a href="#">Контакты<span></span></a></li>
+                        <li><a class="first-active" href="contact.php">Контакты<span></span></a></li>
                     </ul>
 
                 </div>
@@ -88,27 +96,29 @@
 <!--End header-->
 
 <!--Begin form-->
+
 <section class="form">
     <div class="container">
         <div class="row">
             <div class="col-md-12 feedback-form">
                 <h1><strong>Напешите</strong> нам</h1>
-                <form class="row" method="post">
+                <h3 class="error"><?php if (isset($_SESSION['error'])) { echo $_SESSION['error']; } ?></h3>
+                <form class="row post-form"  method="post">
 
                     <div class="form-group col-md-4">
-                        <input type="text" class="name" name="name" placeholder="Имя:"/>
+                        <input type="text" class="name" name="name" placeholder="Имя:" value="<?php if (isset ($_SESSION['name'])) { echo $_SESSION['name']; } ?>"/>
                     </div>
 
                     <div class="form-group col-md-4">
-                        <input type="email" class="email" name="email" placeholder="Email:"/>
+                        <input type="email" class="email" name="email" placeholder="Email:" value="<?php if (isset ($_SESSION['email'])) { echo $_SESSION['email']; } ?>"/>
                     </div>
 
                     <div class="form-group col-md-4">
-                        <input type="phone" class="phone" name="phone" placeholder=" Телефон:"/>
+                        <input type="phone" class="phone" name="phone" placeholder="елефон: +38(0xx)-xxx-xx-xx" value="<?php if (isset ($_SESSION['phone'])) { echo $_SESSION['phone']; } ?>"/>
                     </div>
 
                     <div class="form-group col-md-12">
-                        <textarea type="text" class="massage" name="massage">Соопщение:</textarea>
+                        <textarea class="massage" name="massage" placeholder="Соопщение:"><?php if (isset ($_SESSION['massage'])) { echo $_SESSION['massage']; } ?></textarea>
                     </div>
 
                     <div class="form-group col-md-12">
@@ -171,6 +181,7 @@
 <!--End footer-->
 <!--Google.maps.api-->
 <div id="toTop" class="show__btn-hidden btn-hidden"></div>
+<?php session_unset(); ?>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

@@ -11,9 +11,15 @@ $color-text-title: #fc5a0a;
         color: $color-text-title;
     }
 
+    .error {
+        color: red;
+    }
+
     .form-group {
-//        width: 33%;
-//        float: left;
+
+        position: inherit;
+
+        border-radius: 2px;
 
         input {
             width: 100%;
