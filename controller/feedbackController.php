@@ -11,7 +11,7 @@ class FeedbackForm {
     public static function checkData($data)
     {
         if($data['name'] === "" || $data['email'] === "" || $data['phone'] === "" || $data['massage'] ==="") {
-            $_SESSION['error'] = "Fill all required fields!";
+            $_SESSION['error'] = "Пожалуйста заполните все поля!";
 //            header('Location: ../pages/contact.php');
         } else {
 
