@@ -74,7 +74,7 @@
                 <div id="navbar-collapse" class="collapse navbar-collapse ">
                     <ul class="nav navbar-nav">
                         <li><a href="../index.html">Главная<span></span></a></li>
-                        <li><a href="shopping.php">Что мы покупаем?<span></span></a></li>
+                        <li><a href="shopping.html">Что мы покупаем?<span></span></a></li>
                         <li><a class="first-active" href="gallery.php">Фотографии товара<span></span></a></li>
                         <li><a href="contact.php">Контакты<span></span></a></li>
                     </ul>
