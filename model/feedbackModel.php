@@ -33,7 +33,6 @@ class Form {
         $data['comments_date'] = date('Y-m-d');
         $data['user_IP'] = $_SERVER['SERVER_ADDR'];
 
-//        var_dump($data);die;
         if (!empty($errors)) {
             return false;
         }

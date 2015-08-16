@@ -12,7 +12,6 @@ class FeedbackForm {
     {
         if($data['name'] === "" || $data['email'] === "" || $data['phone'] === "" || $data['massage'] ==="") {
             $_SESSION['error'] = "Пожалуйста заполните все поля!";
-//            header('Location: ../pages/contact.php');
         } else {
 
             include_once "../model/feedbackModel.php";
